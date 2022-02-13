@@ -1,0 +1,42 @@
+name: quizapp
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  freezed: ^1.1.1
+  cached_network_image: ^3.2.0
+  intl: ^0.17.0
+  provider: ^6.0.2
+  stacked: ^2.2.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  json_serializable: ^6.1.4
+  build_runner: ^2.1.7
+  freezed_annotation: ^1.1.0
+  flutter_lints: ^1.0.0
+  json_annotation: ^4.4.0
+
+flutter:
+  uses-material-design: true
+
+flutter_intl:
+  enabled: true
+  class_name: AppLocalizations
+  main_locale: pl
+  arb_dir: lib/src/core/localizations/l10n
+  output_dir: lib/src/core/localizations/generated
+  
